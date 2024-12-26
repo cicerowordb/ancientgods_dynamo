@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center; margin: 2em 0;">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="max-width: 400px; margin-bottom: 1em;">
+    <h2>About Ancient Gods Database</h2>
+    <p>
+        The Ancient Gods Database is a comprehensive project aimed at cataloging and presenting detailed information 
+        about mythological figures from ancient civilizations. 
+        This application showcases the fascinating world of mythology, making it accessible to users who wish to 
+        explore the stories, attributes, and cultural significance of ancient deities.
+    </p>
+    <p>
+        Developed as part of the DevOps course by Academia DevOps, this project serves a didactic purpose. It 
+        demonstrates the practical application of DevOps principles, including continuous integration, deployment, and 
+        infrastructure as code. 
+        The goal is to provide students and enthusiasts with a hands-on experience in building, deploying, and managing 
+        a real-world application in a DevOps environment.
+    </p>
+    <p>
+        The application is open for any modifications or extensions, reflecting the collaborative and adaptive spirit 
+        of the DevOps culture. 
+        Whether you want to add new features, improve functionality, or adapt it to a different mythology, you are 
+        encouraged to explore and innovate.
+    </p>
+    <p>
+        The data for this project, including the list of gods and their attributes, is sourced from the open-source 
+        project available at 
+        <a href="https://github.com/kamiranoff/greek-mythology-data" target="_blank">kamiranoff/greek-mythology-data</a>. 
+        We extend our gratitude to the contributors of this project for providing an invaluable resource that makes this
+        application possible. If any information in this JSON file is incorrect, please contact the responsible party
+        directly, as we have not conducted any evaluation of the content of the data.
+    </p>
+</div>
+{% endblock %}

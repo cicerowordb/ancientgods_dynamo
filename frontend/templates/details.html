@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ god['name'] }}</h2>
+<div style="display: flex; gap: 2em;">
+    <!-- Coluna da Imagem -->
+    {% if god['images'] and god['images'].get('regular') %}
+    <div style="flex: 1; text-align: center;">
+        <img src="{{ god['images']['regular'] }}" alt="{{ god['name'] }}" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    </div>
+    {% endif %}
+
+    <!-- Coluna da Descrição -->
+    <div style="flex: 2;">
+        <p>{{ god['description'] }}</p>
+        <table>
+            <tr>
+                <th>Greek Name</th>
+                <td>{{ god['greekName'] }}</td>
+            </tr>
+            <tr>
+                <th>Roman Name</th>
+                <td>{{ god['romanName'] }}</td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td>{{ god['category'] }}</td>
+            </tr>
+            <tr>
+                <th>Immortal</th>
+                <td>{{ god['immortal'] }}</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>{{ god['gender'] }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+{% endblock %}

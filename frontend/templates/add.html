@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add a New God</h2>
+<form method="post">
+    <table>
+        <tr>
+            <th><label for="name">Name:</label></th>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <th><label for="description">Description:</label></th>
+            <td><textarea id="description" name="description" required></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="greekName">Greek Name:</label></th>
+            <td><input type="text" id="greekName" name="greekName"></td>
+        </tr>
+        <tr>
+            <th><label for="romanName">Roman Name:</label></th>
+            <td><input type="text" id="romanName" name="romanName"></td>
+        </tr>
+        <tr>
+            <th><label for="category">Category:</label></th>
+            <td><input type="text" id="category" name="category"></td>
+        </tr>
+        <tr>
+            <th><label for="immortal">Immortal:</label></th>
+            <td><input type="checkbox" id="immortal" name="immortal" value="true"></td>
+        </tr>
+        <tr>
+            <th><label for="gender">Gender:</label></th>
+            <td><input type="text" id="gender" name="gender"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Add</button>
+            </td>
+        </tr>
+    </table>
+</form>
+{% endblock %}

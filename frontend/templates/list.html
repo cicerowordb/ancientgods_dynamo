@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>List of Ancient Gods</h2>
+{% if gods %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Greek Name</th>
+        <th>Roman Name</th>
+        <th colspan="2"><center>Actions</center></th>
+    </tr>
+    {% for god in gods %}
+    <tr>
+        <td>{{ god['name'] }}</td>
+        <td>{{ god['category'] }}</td>
+        <td>{{ god['greekName'] }}</td>
+        <td>{{ god['romanName'] }}</td>
+        <td>
+            <form method="get" action="/details/{{ god['name'] }}">
+                <button type="submit" class="btn view-btn">View</button>
+            </form>
+        </td>
+        <td>
+            <form method="get" action="/delete/{{ god['name'] }}">
+                <button type="submit" class="btn delete-btn">Delete</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No gods found. Add some using the "Add God" option in the menu.</p>
+{% endif %}
+{% endblock %}

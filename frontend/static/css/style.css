@@ -1,0 +1,281 @@
+/* Global styles for the entire application */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Dark background matching logo */
+    color: #e6e6e6; /* Light text for contrast */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav {
+    margin-top: 0.5em;
+}
+
+header nav a {
+    color: #e6e6e6; /* Light text for links */
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #008080; /* Teal for hover effect */
+}
+
+/* Main container */
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #1a1a1a; /* Dark grey for content background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h2 {
+    color: #00cc99; /* Bright teal matching logo */
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #262626; /* Darker grey for list items */
+    margin: 0.5em 0;
+    padding: 0.8em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+ul li a {
+    text-decoration: none;
+    color: #00cc99; /* Bright teal text */
+    font-weight: bold;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: #262626; /* Darker grey for forms */
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    font-weight: bold;
+    color: #e6e6e6; /* Light text for labels */
+}
+
+form input,
+form textarea,
+form button {
+    padding: 0.4em;
+    font-size: 1rem;
+    border: 1px solid #4d4d4d; /* Grey border */
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00cc99; /* Bright teal for focus */
+    outline: none;
+}
+
+/* General button styles */
+form button,
+.btn {
+    background-color: #00cc99; /* Bright teal for buttons */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover,
+.btn:hover {
+    background-color: #008080; /* Darker teal on hover */
+}
+
+/* Specific styles for view and delete buttons */
+form .view-btn {
+    background-color: #00cc99; /* Teal for view */
+}
+
+form .view-btn:hover {
+    background-color: #008080;
+}
+
+form .delete-btn {
+    background-color: #cc0000; /* Red for delete */
+}
+
+form .delete-btn:hover {
+    background-color: #990000;
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease;
+}
+
+.notification.success {
+    background-color: #00cc99; /* Teal for success */
+}
+
+.notification.error {
+    background-color: #cc0000; /* Red for error */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: #1a1a1a; /* Dark grey table background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: 0px solid #4d4d4d; /* Grey border */
+    padding: 0.8em;
+    text-align: left;
+}
+
+th {
+    background-color: #262626; /* Darker grey for headers */
+    font-weight: bold;
+    color: #e6e6e6; /* Light text */
+}
+
+tr:nth-child(even) {
+    background-color: #333333; /* Slightly lighter grey for even rows */
+}
+
+tr:hover {
+    background-color: #404040; /* Slightly darker grey on hover */
+}
+
+/* Details container */
+.details-container {
+    display: flex;
+    gap: 2em;
+    margin: 1em 0;
+}
+
+.details-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.details-container table {
+    margin-top: 1em;
+}
+
+.details-container th, .details-container td {
+    padding: 0.8em;
+    border: 1px solid #4d4d4d;
+}
+
+.details-container th {
+    text-align: left;
+    background-color: #262626;
+}
+
+/* About container */
+.about-container {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.about-container img {
+    max-width: 200px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.about-container h2 {
+    color: #00cc99;
+    margin-bottom: 1em;
+}
+
+.about-container p {
+    color: #e6e6e6;
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    main {
+        margin: 1em;
+        padding: 1em;
+    }
+}

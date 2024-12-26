@@ -1,0 +1,5 @@
+*.old
+*.secret*
+frontenv
+backenv
+__pycache__
