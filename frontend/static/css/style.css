@@ -3,15 +3,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d0d0d; /* Dark background matching logo */
-    color: #e6e6e6; /* Light text for contrast */
+    background-color: #f0f2f5;
+    color: #333;
     line-height: 1.6;
 }
 
 /* Header styles */
 header {
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
+    background-color: #1a1a2e;
+    color: #e6e6e6;
     padding: 1em 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ header nav {
 }
 
 header nav a {
-    color: #e6e6e6; /* Light text for links */
+    color: #e6e6e6;
     text-decoration: none;
     margin: 0 1em;
     font-weight: bold;
@@ -37,7 +37,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: #008080; /* Teal for hover effect */
+    background-color: #162447;
 }
 
 /* Main container */
@@ -45,14 +45,14 @@ main {
     max-width: 1200px;
     margin: 2em auto;
     padding: 1em;
-    background: #1a1a1a; /* Dark grey for content background */
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Headings */
 h2 {
-    color: #00cc99; /* Bright teal matching logo */
+    color: #1a1a2e;
     margin-bottom: 1em;
     font-size: 1.8rem;
 }
@@ -64,22 +64,22 @@ ul {
 }
 
 ul li {
-    background: #262626; /* Darker grey for list items */
+    background: #f9f9f9;
     margin: 0.5em 0;
     padding: 0.8em;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 ul li:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 ul li a {
     text-decoration: none;
-    color: #00cc99; /* Bright teal text */
+    color: #1a1a2e;
     font-weight: bold;
 }
 
@@ -88,15 +88,15 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    background: #262626; /* Darker grey for forms */
+    background: #f9f9f9;
     padding: 0.5em;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     font-weight: bold;
-    color: #e6e6e6; /* Light text for labels */
+    color: #333;
 }
 
 form input,
@@ -104,7 +104,7 @@ form textarea,
 form button {
     padding: 0.4em;
     font-size: 1rem;
-    border: 1px solid #4d4d4d; /* Grey border */
+    border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
@@ -113,15 +113,15 @@ form button {
 
 form input:focus,
 form textarea:focus {
-    border-color: #00cc99; /* Bright teal for focus */
+    border-color: #1a1a2e;
     outline: none;
 }
 
 /* General button styles */
 form button,
 .btn {
-    background-color: #00cc99; /* Bright teal for buttons */
-    color: #ffffff; /* White text */
+    background-color: #1a1a2e;
+    color: white;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -133,24 +133,24 @@ form button,
 
 form button:hover,
 .btn:hover {
-    background-color: #008080; /* Darker teal on hover */
+    background-color: #162447;
 }
 
 /* Specific styles for view and delete buttons */
 form .view-btn {
-    background-color: #00cc99; /* Teal for view */
+    background-color: #4CAF50; /* Green for view */
 }
 
 form .view-btn:hover {
-    background-color: #008080;
+    background-color: #45a049;
 }
 
 form .delete-btn {
-    background-color: #cc0000; /* Red for delete */
+    background-color: #F44336; /* Red for delete */
 }
 
 form .delete-btn:hover {
-    background-color: #990000;
+    background-color: #d32f2f;
 }
 
 /* Notification styles */
@@ -168,11 +168,11 @@ form .delete-btn:hover {
 }
 
 .notification.success {
-    background-color: #00cc99; /* Teal for success */
+    background-color: #4CAF50;
 }
 
 .notification.error {
-    background-color: #cc0000; /* Red for error */
+    background-color: #F44336;
 }
 
 /* Keyframes for fade-in animation */
@@ -192,28 +192,27 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 1em 0;
-    background-color: #1a1a1a; /* Dark grey table background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    border: 0px solid #4d4d4d; /* Grey border */
+    border: 0px solid #ddd;
     padding: 0.8em;
     text-align: left;
 }
 
 th {
-    background-color: #262626; /* Darker grey for headers */
+    background-color: #f4f4f4;
     font-weight: bold;
-    color: #e6e6e6; /* Light text */
 }
 
 tr:nth-child(even) {
-    background-color: #333333; /* Slightly lighter grey for even rows */
+    background-color: #f9f9f9;
 }
 
 tr:hover {
-    background-color: #404040; /* Slightly darker grey on hover */
+    background-color: #f1f1f1;
 }
 
 /* Details container */
@@ -226,7 +225,7 @@ tr:hover {
 .details-container img {
     max-width: 100%;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .details-container table {
@@ -235,12 +234,12 @@ tr:hover {
 
 .details-container th, .details-container td {
     padding: 0.8em;
-    border: 1px solid #4d4d4d;
+    border: 1px solid #ddd;
 }
 
 .details-container th {
     text-align: left;
-    background-color: #262626;
+    background-color: #f4f4f4;
 }
 
 /* About container */
@@ -253,16 +252,16 @@ tr:hover {
     max-width: 200px;
     margin-bottom: 1em;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .about-container h2 {
-    color: #00cc99;
+    color: #1a1a2e;
     margin-bottom: 1em;
 }
 
 .about-container p {
-    color: #e6e6e6;
+    color: #333;
     line-height: 1.6;
     margin: 0.5em 0;
 }
